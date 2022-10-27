@@ -1,4 +1,4 @@
-@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+/* @import '@angular/material/prebuilt-themes/deeppurple-amber.css'; */
 
 * {
   text-align: center;
@@ -13,7 +13,7 @@ main {
   height: 3rem;
   background-color: #004d40;
   font-weight: bold;
-  font-size: 16px;
+  /* font-size: 16px; */
   color: white;
   border-top-color: #fdd835;
   border-style: solid;

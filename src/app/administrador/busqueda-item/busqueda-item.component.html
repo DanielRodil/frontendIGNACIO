@@ -4,20 +4,18 @@
         <br>
         <br>
         <div class="row justify-content-center">
-            <div class="col-5">
+            <div class="col-4">
                 <h2>{{ vehiculo.matricula.toUpperCase() }} &nbsp; {{ vehiculo.marca.toUpperCase() }} &nbsp; {{ vehiculo.modelo.toUpperCase() }}</h2>
             </div>
-            <div class="col-2">
+            <div class="col-4">
                 <button type="button" class="btn btn-primary btn-md" (click)="consultar()">
                     Consultar
                 </button>
-            </div>
-            <div class="col-2">
+                &nbsp; &nbsp; &nbsp; &nbsp;
                 <button type="button" class="btn btn-warning btn-md" (click)="editar()">
                     Editar
                 </button>
-            </div>
-            <div class="col-2">
+                &nbsp; &nbsp; &nbsp; &nbsp;
                 <button type="button" class="btn btn-danger btn-md" (click)="eliminar()">
                     Eliminar
                 </button>
