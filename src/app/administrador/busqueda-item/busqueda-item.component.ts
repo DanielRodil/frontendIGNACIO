@@ -1,5 +1,4 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { faMagnifyingGlass, faPencil, faTrashCan } from '@fortawesome/free-solid-svg-icons';
 import { Vehiculo } from 'src/app/vehiculo/models/vehiculo';
 import { VehiculoImpl } from 'src/app/vehiculo/models/vehiculo-impl';
 
@@ -9,10 +8,6 @@ import { VehiculoImpl } from 'src/app/vehiculo/models/vehiculo-impl';
   styleUrls: ['./busqueda-item.component.css']
 })
 export class BusquedaItemComponent implements OnInit {
-
-  faMagnifyingGlass = faMagnifyingGlass;
-  faPencil = faPencil;
-  faTrashCan = faTrashCan;
 
   @Input() vehiculo: Vehiculo = new VehiculoImpl;
   @Output() vehiculoConsultar = new EventEmitter<VehiculoImpl>();
