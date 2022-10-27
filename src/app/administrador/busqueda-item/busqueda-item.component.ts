@@ -1,8 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { Router } from '@angular/router';
+import { faMagnifyingGlass, faPencil, faTrashCan } from '@fortawesome/free-solid-svg-icons';
 import { Vehiculo } from 'src/app/vehiculo/models/vehiculo';
 import { VehiculoImpl } from 'src/app/vehiculo/models/vehiculo-impl';
-import { faMagnifyingGlass, faPencil, faTrashCan } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-busqueda-item',
@@ -20,12 +19,12 @@ export class BusquedaItemComponent implements OnInit {
   @Output() vehiculoEliminar = new EventEmitter<VehiculoImpl>();
   @Output() vehiculoEditar = new EventEmitter<Vehiculo>();
 
-  constructor(private router: Router) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
 
-  consultarVH(): void{
+  consultar(): void{
     this.vehiculoConsultar.emit(this.vehiculo);
   }
 
