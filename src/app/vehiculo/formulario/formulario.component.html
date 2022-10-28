@@ -302,24 +302,31 @@
   <!-- Tercer step -->
   <mat-step [stepControl]="thirdFormGroup">
     <form [formGroup]="thirdFormGroup">
-      <ng-template matStepLabel> PLAN PREVENTIVO</ng-template>
+    <ng-template matStepLabel> PLAN PREVENTIVO</ng-template>
 
-      <div class="container overflow-hidden text-center">
-        <div class="row gx-5">
-          <mat-form-field>
-            <mat-label>Condiciones de Uso:</mat-label>
-            <mat-select matInput formControlName="condicionesUso" [(ngModel)]="mantenimientoPreventivo.condicionesUso"
-              required>
+      <div class="row">
+
+        <div class="col-xl-12">
+          <mat-form-field class="fs-6" appearance="outline">
+            <mat-label>Condiciones Uso</mat-label>
+            <mat-select matInput type="text" formControlName="condicionesUso" [(ngModel)]="mantenimientoPreventivo.condicionesUso" required>
               <mat-option selected></mat-option>
               <mat-option value="Normales">Normales</mat-option>
               <mat-option value="Severas">Severas</mat-option>
             </mat-select>
-          </mat-form-field>
+            </mat-form-field>
         </div>
+
+      </div>
+
+      <div class="container overflow-hidden text-center">
+
         <div class="row gx-5">
+
           <div class="col">
             <div class="p-3 border bg-light">
               <table class="table">
+
                 <thead>
                   <tr>
                     <th scope="col">Acción</th>
@@ -327,7 +334,9 @@
                     <th scope="col">Meses</th>
                   </tr>
                 </thead>
+
                 <tbody>
+
                   <tr>
                     <th scope="row">Líquido de frenos</th>
                     <td>
@@ -335,8 +344,10 @@
                         [(ngModel)]="mantenimientoPreventivo.liquidoFrenosKm">
                     </td>
                     <td><input matInput type="number" formControlName="liquidoFrenosMes"
-                        [(ngModel)]="mantenimientoPreventivo.liquidoFrenosMes"></td>
+                        [(ngModel)]="mantenimientoPreventivo.liquidoFrenosMes">
+                    </td>
                   </tr>
+
                   <tr>
                     <th scope="row">* Operaciones Sistemáticas</th>
                     <td>
@@ -348,6 +359,7 @@
                         [(ngModel)]="mantenimientoPreventivo.operacionesSistematicasMes">
                     </td>
                   </tr>
+
                   <tr>
                     <th scope="row">Filtro de Aire</th>
                     <td>
@@ -359,6 +371,7 @@
                         [(ngModel)]="mantenimientoPreventivo.filtroAireMes">
                     </td>
                   </tr>
+
                   <tr>
                     <th scope="row">Filtro de Aire Habitáculo</th>
                     <td>
@@ -366,8 +379,10 @@
                         [(ngModel)]="mantenimientoPreventivo.filtroAireHabitaculoKm">
                     </td>
                     <td><input matInput type="number" formControlName="filtroAireHabitaculoMes"
-                        [(ngModel)]="mantenimientoPreventivo.filtroAireHabitaculoMes"></td>
+                        [(ngModel)]="mantenimientoPreventivo.filtroAireHabitaculoMes">
+                    </td>
                   </tr>
+
                   <tr>
                     <th scope="row">Filtro Combustible</th>
                     <td>
@@ -375,8 +390,10 @@
                         [(ngModel)]="mantenimientoPreventivo.filtroCombustibleKm">
                     </td>
                     <td><input matInput type="number" formControlName="filtroCombustibleMes"
-                        [(ngModel)]="mantenimientoPreventivo.filtroCombustibleMes"></td>
+                        [(ngModel)]="mantenimientoPreventivo.filtroCombustibleMes">
+                    </td>
                   </tr>
+
                   <tr>
                     <th scope="row">Filtro Antipolen</th>
                     <td>
@@ -384,8 +401,10 @@
                         [(ngModel)]="mantenimientoPreventivo.filtroAntipolenKm">
                     </td>
                     <td><input matInput type="number" formControlName="filtroAntipolenMes"
-                        [(ngModel)]="mantenimientoPreventivo.filtroAntipolenMes"></td>
+                        [(ngModel)]="mantenimientoPreventivo.filtroAntipolenMes">
+                    </td>
                   </tr>
+
                   <tr>
                     <th scope="row">Correa de Distribución</th>
                     <td>
@@ -393,8 +412,10 @@
                         [(ngModel)]="mantenimientoPreventivo.correaDistribucionKm">
                     </td>
                     <td><input matInput type="number" formControlName="correaDistribucionMes"
-                        [(ngModel)]="mantenimientoPreventivo.correaDistribucionMes"></td>
+                        [(ngModel)]="mantenimientoPreventivo.correaDistribucionMes">
+                    </td>
                   </tr>
+
                   <tr>
                     <th scope="row">Kit de Distribución</th>
                     <td>
@@ -402,15 +423,20 @@
                         [(ngModel)]="mantenimientoPreventivo.kitDistribucionKm">
                     </td>
                     <td><input matInput type="number" formControlName="kitDistribucionMes"
-                        [(ngModel)]="mantenimientoPreventivo.kitDistribucionMes"></td>
+                        [(ngModel)]="mantenimientoPreventivo.kitDistribucionMes">
+                    </td>
                   </tr>
+                  
                 </tbody>
+
               </table>
             </div>
           </div>
+
           <div class="col">
             <div class="p-3 border bg-light">
               <table class="table">
+
                 <thead>
                   <tr>
                     <th scope="col">Acción</th>
@@ -418,7 +444,9 @@
                     <th scope="col">Meses</th>
                   </tr>
                 </thead>
+
                 <tbody>
+
                   <tr>
                     <th scope="row">Reglaje Proyectores</th>
                     <td>
@@ -426,8 +454,10 @@
                         [(ngModel)]="mantenimientoPreventivo.reglajeProyectoresKm">
                     </td>
                     <td><input matInput type="number" formControlName="reglajeProyectoresMes"
-                        [(ngModel)]="mantenimientoPreventivo.reglajeProyectoresMes"></td>
+                        [(ngModel)]="mantenimientoPreventivo.reglajeProyectoresMes">
+                    </td>
                   </tr>
+
                   <tr>
                     <th scope="row">Ph Liquido Refrigeración</th>
                     <td>
@@ -435,8 +465,10 @@
                         [(ngModel)]="mantenimientoPreventivo.pHLiquidoRefrigeracionKm">
                     </td>
                     <td><input matInput type="number" formControlName="pHLiquidoRefrigeracionMes"
-                        [(ngModel)]="mantenimientoPreventivo.pHLiquidoRefrigeracionMes"></td>
+                        [(ngModel)]="mantenimientoPreventivo.pHLiquidoRefrigeracionMes">
+                    </td>
                   </tr>
+
                   <tr>
                     <th scope="row">Líquido Refrigeración</th>
                     <td>
@@ -444,8 +476,10 @@
                         [(ngModel)]="mantenimientoPreventivo.liquidoRefrigeracionKm">
                     </td>
                     <td><input matInput type="number" formControlName="liquidoRefrigeracionMes"
-                        [(ngModel)]="mantenimientoPreventivo.liquidoRefrigeracionMes"></td>
+                        [(ngModel)]="mantenimientoPreventivo.liquidoRefrigeracionMes">
+                    </td>
                   </tr>
+
                   <tr>
                     <th scope="row">Correa Arrastre Accesorios</th>
                     <td>
@@ -453,17 +487,21 @@
                         [(ngModel)]="mantenimientoPreventivo.correaArrastreAccesoriosKm">
                     </td>
                     <td><input matInput type="number" formControlName="correaArrastreAccesoriosMes"
-                        [(ngModel)]="mantenimientoPreventivo.correaArrastreAccesoriosMes"></td>
+                        [(ngModel)]="mantenimientoPreventivo.correaArrastreAccesoriosMes">
+                    </td>
                   </tr>
+
                   <tr>
-                    <th scope="row">Kit Correa Arrastre Accesorios</th>
+                    <th scope="row">Kit Correa Arrastr Accesorios</th>
                     <td>
                       <input matInput type="number" formControlName="kitCorreaArrastreAccesoriosKm"
                         [(ngModel)]="mantenimientoPreventivo.kitCorreaArrastreAccesoriosKm">
                     </td>
                     <td><input matInput type="number" formControlName="kitCorreaArrastreAccesoriosMes"
-                        [(ngModel)]="mantenimientoPreventivo.kitCorreaArrastreAccesoriosMes"></td>
+                        [(ngModel)]="mantenimientoPreventivo.kitCorreaArrastreAccesoriosMes">
+                    </td>
                   </tr>
+
                   <tr>
                     <th scope="row">Anticongelante</th>
                     <td>
@@ -471,8 +509,10 @@
                         [(ngModel)]="mantenimientoPreventivo.anticongelanteKm">
                     </td>
                     <td><input matInput type="number" formControlName="anticongelanteMes"
-                        [(ngModel)]="mantenimientoPreventivo.anticongelanteMes"></td>
+                        [(ngModel)]="mantenimientoPreventivo.anticongelanteMes">
+                    </td>
                   </tr>
+
                   <tr>
                     <th scope="row">Aceite Transmisión</th>
                     <td>
@@ -480,8 +520,10 @@
                         [(ngModel)]="mantenimientoPreventivo.aceiteTransmisionKm">
                     </td>
                     <td><input matInput type="number" formControlName="aceiteTransmisionMes"
-                        [(ngModel)]="mantenimientoPreventivo.aceiteTransmisionMes"></td>
+                        [(ngModel)]="mantenimientoPreventivo.aceiteTransmisionMes">
+                    </td>
                   </tr>
+
                   <tr>
                     <th scope="row">Bujías Encendido</th>
                     <td>
@@ -489,25 +531,34 @@
                         [(ngModel)]="mantenimientoPreventivo.bujiasEncendidoKm">
                     </td>
                     <td><input matInput type="number" formControlName="bujiasEncendidoMes"
-                        [(ngModel)]="mantenimientoPreventivo.bujiasEncendidoMes"></td>
+                        [(ngModel)]="mantenimientoPreventivo.bujiasEncendidoMes">
+                    </td>
                   </tr>
+
                 </tbody>
+                
               </table>
             </div>
           </div>
+          
         </div>
+        
       </div>
 
-      <div class="row">
-        <mat-label> * Operaciones Sistemáticas: Cambio de aceite motor, inspeccion general del vehiculo(estado
-          neumáticos,faros, luces, frenos, limpiaparabrisas, dirección...) </mat-label>
-      </div>
       <br><br>
+
+      <p class="fs-6">* Operaciones Sistemáticas: Cambio de aceite motor, inspeccion general del vehiculo (estado
+          neumáticos, faros, luces, frenos, limpiaparabrisas, dirección...)</p>
+      
+      <br><br>
+      
       <div>
         <button class="btn btn-warning btn-md" mat-button matStepperPrevious>Atrás</button>
         &nbsp;&nbsp;&nbsp;
         <a routerLink="/vehiculos"><button class="btn btn-primary btn-md" mat-button (click)="onAddVehiculo()">Guardar</button></a>
       </div>
+
+      <br>
 
     </form>
   </mat-step>
