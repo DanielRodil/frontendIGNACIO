@@ -137,7 +137,7 @@ export class FormularioComponent implements OnInit {
           });
       });
     let id: string = this.cargarId();
-    this.router.navigate([`/vehiculos/consultar/${id}`]);
+    // this.router.navigate([`/vehiculos/consultar/${id}`]);
   }
 
   onAddDatosTecnicosInteres(): void {

@@ -17,7 +17,7 @@
         <div class="col-xl-6">
           <mat-form-field class="fs-5" appearance="outline">
             <mat-label>Matrícula</mat-label>
-            <input type="text" matInput placeholder="PGCxxxxA" formControlName="matricula"
+            <input type="text" matInput placeholder="PGC0000A" formControlName="matricula"
               [(ngModel)]="vehiculo.matricula" maxlength="8" minlength="8" required />
           </mat-form-field>
         </div>
@@ -76,7 +76,7 @@
         <div class="col-xl-6">
           <mat-form-field class="fs-5" appearance="outline">
             <mat-label>Unidad Destino</mat-label>
-            <input type="text" matInput placeholder="Puesto de Adamuz" formControlName="unidadDestino"
+            <input type="text" matInput formControlName="unidadDestino"
               [(ngModel)]="vehiculo.unidadDestino" required />
           </mat-form-field>
         </div>
@@ -180,7 +180,7 @@
           <div class="col-xl-6">
             <mat-form-field class="fs-6" appearance="outline">
               <mat-label>Capacidad Depósito</mat-label>
-              <input type="number" matInput formControlName="capacidadDeposito"
+              <input type="number" matInput placeholder="Litros" formControlName="capacidadDeposito"
                 [(ngModel)]="datosTecnicosInteres.capacidadDeposito" required />
             </mat-form-field>
           </div>
@@ -197,7 +197,7 @@
           <div class="col-xl-6">
             <mat-form-field class="fs-6" appearance="outline">
               <mat-label>Lubricante</mat-label>
-              <input type="text" matInput formControlName="lubricanteMotor"
+              <input type="text" matInput placeholder="5W30 SYNTETIC" formControlName="lubricanteMotor"
                 [(ngModel)]="datosTecnicosInteres.lubricanteMotor" required />
             </mat-form-field>
           </div>
@@ -263,7 +263,7 @@
           <div class="col-xl-3">
             <mat-form-field class="fs-6" appearance="outline">
               <mat-label>Amperios/Hora</mat-label>
-              <input type="number" matInput formControlName="amperiosHoraBaterias"
+              <input type="number" matInput placeholder="amp/h" formControlName="amperiosHoraBaterias"
                 [(ngModel)]="datosTecnicosInteres.amperiosHoraBaterias" required />
             </mat-form-field>
           </div>
@@ -271,7 +271,7 @@
           <div class="col-xl-3">
             <mat-form-field class="fs-6" appearance="outline">
               <mat-label>Amperaje:</mat-label>
-              <input type="number" matInput placeholder="10 amp" formControlName="amperajeBaterias"
+              <input type="number" matInput placeholder="amp" formControlName="amperajeBaterias"
                 [(ngModel)]="datosTecnicosInteres.amperajeBaterias" required />
             </mat-form-field>
           </div>
@@ -555,7 +555,7 @@
       <div>
         <button class="btn btn-warning btn-md" mat-button matStepperPrevious>Atrás</button>
         &nbsp;&nbsp;&nbsp;
-        <a routerLink="/vehiculos"><button class="btn btn-primary btn-md" mat-button (click)="onAddVehiculo()">Guardar</button></a>
+        <a routerLink="/administrador"><button class="btn btn-primary btn-md" mat-button (click)="onAddVehiculo()">Guardar</button></a>
       </div>
 
       <br>
