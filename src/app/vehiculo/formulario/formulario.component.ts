@@ -122,9 +122,11 @@ export class FormularioComponent implements OnInit {
     this.datosTecnicosInteresService
       .creardatosTecnicosInteres(this.datosTecnicosInteres)
       .subscribe((datosTecnicos) => {
+
         this.vehiculo.datosTecnicosInteres =
           datosTecnicos._links.datotecnicointeres.href;
         console.log(this.vehiculo);
+        
         this.mantenimientoPreventivoService
           .crearMantenimientoPreventivo(this.mantenimientoPreventivo)
           .subscribe((planPreventivo) => {
