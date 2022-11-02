@@ -149,6 +149,7 @@
             <mat-form-field class="fs-6" appearance="outline">
               <mat-label>Capacidad Depósito</mat-label>
               <input type="number" matInput formControlName="capacidadDeposito" [(ngModel)]="datosTecnicosInteres.capacidadDeposito" readonly />
+              <span matSuffix>Litros</span>
             </mat-form-field>
           </div>
 
@@ -172,6 +173,7 @@
             <mat-form-field class="fs-6" appearance="outline">
               <mat-label>Capacidad Carter</mat-label>
               <input type="number" matInput formControlName="capacidadCarter" [(ngModel)]="datosTecnicosInteres.capacidadCarter" readonly />
+              <span matSuffix>Litros</span>
             </mat-form-field>
           </div>
 
@@ -188,6 +190,7 @@
             <mat-form-field class="fs-6" appearance="outline">
               <mat-label>Presión Delanteros</mat-label>
               <input type="number" matInput  formControlName="presionNeumaticosDelanteros" [(ngModel)]="datosTecnicosInteres.presionNeumaticosDelanteros" readonly />
+              <span matSuffix>bar</span>
             </mat-form-field>
           </div>
 
@@ -195,6 +198,7 @@
             <mat-form-field class="fs-6" appearance="outline">
               <mat-label>Presión Traseros</mat-label>
               <input type="number" matInput formControlName="presionNeumaticosTraseros" [(ngModel)]="datosTecnicosInteres.presionNeumaticosTraseros" readonly />
+              <span matSuffix>bar</span>
             </mat-form-field>
           </div>
 
@@ -225,6 +229,7 @@
             <mat-form-field class="fs-6" appearance="outline">
               <mat-label>Amperios/Hora</mat-label>
               <input type="number" matInput formControlName="amperiosHoraBaterias" [(ngModel)]="datosTecnicosInteres.amperiosHoraBaterias" readonly />
+              <span matSuffix>amp/h</span>
             </mat-form-field>
           </div>
 
@@ -232,6 +237,7 @@
             <mat-form-field class="fs-6" appearance="outline">
               <mat-label>Amperaje:</mat-label>
               <input type="number" matInput formControlName="amperajeBaterias" [(ngModel)]="datosTecnicosInteres.amperajeBaterias" readonly />
+              <span matSuffix>amp</span>
             </mat-form-field>
           </div>
 
@@ -239,6 +245,7 @@
             <mat-form-field class="fs-6" appearance="outline">
               <mat-label>Voltaje:</mat-label>
               <input type="number" matInput formControlName="voltajeBaterias" [(ngModel)]="datosTecnicosInteres.voltajeBaterias" readonly />
+              <span matSuffix>V</span>
             </mat-form-field>
           </div>
 
